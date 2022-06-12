@@ -10,6 +10,12 @@ let home = document.querySelector('#home');
 let main = document.querySelector('main');
 let footer = document.querySelector('footer');
 
+let homeNavText = document.querySelector('#homeNavText');
+let portfolioNavText = document.querySelector('#portfolioNavText');
+let skillsNavText = document.querySelector('#skillsNavText');
+let recommandNavText = document.querySelector('#recommandNavText');
+let infoSupNavText = document.querySelector('#infoSupNavText');
+
 let whereIsNavBar = 0;
 
 openCloseNavIcon.addEventListener("click", () => {
@@ -31,6 +37,23 @@ openCloseNavIcon.addEventListener("click", () => {
 
         closeNavBar();
     }
+
+    homeNavText.addEventListener("click", () => {
+        closeNavBar();
+    })
+    portfolioNavText.addEventListener("click", () => {
+        closeNavBar();
+    })
+    skillsNavText.addEventListener("click", () => {
+        closeNavBar();
+    })
+    recommandNavText.addEventListener("click", () => {
+        closeNavBar();
+    })
+    infoSupNavText.addEventListener("click", () => {
+        closeNavBar();
+    })
+
     home.addEventListener("click", () => {
         closeNavBar();
     })
@@ -46,12 +69,12 @@ openCloseNavIcon.addEventListener("click", () => {
 function closeNavBar() {
     navbarContenu.style.width = "0px";
     navbarContenu.style.padding = "30px 0px";
-
+    
     topBarreIconNav.style.position = "relative";
-
+    
     topBarreIconNav.style.transform = "rotate(0deg)";
     bottomBarreIconNav.style.transform = "rotate(0deg)";
-
+    
     middleBarreIconNav.style.display = "block";
 
     whereIsNavBar = 0;

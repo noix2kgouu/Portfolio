@@ -179,7 +179,7 @@ nav ul li a:hover {
     padding: 0 400px;
 
     font-family: 'Poppins', sans-serif;
-    
+
 }
 
 header #presentationPerso {
@@ -451,7 +451,7 @@ transition: all .3s ease; */
 
 /**COMPETENCES -- COMPETENCES*/
 #competenceBoxe {
-    padding:0;
+    padding: 0;
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -515,12 +515,17 @@ transition: all .3s ease; */
 
 
 /**RECOMMANDATION -- RECOMMANDATION*/
+#recommandationSection {
+    padding: 9vh 0px;
+}
 
 #boxeRecommand {
     /**container recommandation*/
     position: relative;
 
-    width: 90%;
+    width: 100%;
+    padding: 9vh 0px;
+    margin: 0 -400px;
     z-index: 0;
 
     display: flex;
@@ -533,9 +538,9 @@ transition: all .3s ease; */
     position: relative;
 
     width: 500px;
-    height: 230px;
+    min-width: 500px;
 
-    padding: 20px 90px;
+    padding: 40px 90px;
     border-radius: 80px 15px 80px 15px;
 
     font-family: 'Poppins', sans-serif;
@@ -602,8 +607,7 @@ transition: all .3s ease; */
 /**positionnement, background, index*/
 #firstRecommandation {
     /**Recommandation n°1*/
-    right: -200px;
-
+    left: 250px;
     z-index: 2;
 
     background: rgb(255, 69, 34);
@@ -612,7 +616,7 @@ transition: all .3s ease; */
 
 #secondRecommandation {
     /**Recommandation n°2*/
-    right: 200px;
+    right: 250px;
     bottom: -20px;
 
     z-index: 1;
@@ -1161,6 +1165,33 @@ footer a {
 
 @media screen and (max-width: 1000px) {
 
+    #boxeRecommand{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0px 0;
+        justify-content: center;
+        align-items: center;
+    }
+    #leftRight{
+        display: none;
+    }
+    .paragrapheRecommand img{
+        width: 25px;
+        margin-top: 0px;
+    }
+    .recommandationCommentaire {
+        position:static;
+        display: block;
+        margin: 10px 0;
+        min-width: 0%;
+        max-width: 70%;
+        padding: 20px;
+    }
+    #secondRecommandation, #firstRecommandation{
+        left: 0;
+        right: 0;
+    }
 
     #competenceBoxe {
         width: 80%;
@@ -1265,17 +1296,19 @@ footer a {
 
     }
 
-    footer{
+    footer {
         padding: 35px 0;
-        
+
     }
+
     footer div {
         flex-direction: column;
         text-align: center;
         align-items: center;
         margin: 0px 0 50px 0
     }
-    footer div div{
+
+    footer div div {
         margin: 10px 0;
         width: 25%;
         height: 2px;
@@ -1285,7 +1318,9 @@ footer a {
     .separateurFooterVertical {
         display: none;
     }
-    #infos, #buttonSocialCV {
+
+    #infos,
+    #buttonSocialCV {
         width: 70%;
     }
 }
@@ -1303,29 +1338,33 @@ footer a {
         height: 250px;
     }
 }
+
 @media screen and (max-width: 500px) {
-    #curriculumVitae{
+    #curriculumVitae {
 
         padding: 0 50px;
     }
 
 }
+
 @media screen and (max-width: 400px) {
-    #curriculumVitae{
+    #curriculumVitae {
 
         padding: 0 40px;
     }
 
 }
+
 @media screen and (max-width: 300px) {
-    #curriculumVitae{
+    #curriculumVitae {
 
         padding: 0 30px;
     }
 
 }
+
 @media screen and (max-width: 200px) {
-    #curriculumVitae{
+    #curriculumVitae {
 
         padding: 0 20px;
     }
