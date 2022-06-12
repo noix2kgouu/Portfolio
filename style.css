@@ -1,0 +1,1333 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+
+/*https://coolors.co/000000-ff4522-e8e8e8-ffffff palette de couleur*/
+* {
+    /**reset*/
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    /**scroll non brusque*/
+    scroll-behavior: smooth;
+}
+
+
+.nonSelectionnable {
+    /**classe élément non sélectionnable*/
+    -moz-user-select: none;
+    /* Firefox */
+    -webkit-user-select: none;
+    /* Chrome, Safari, Opéra depuis la version 15 */
+    -ms-user-select: none;
+    /* Internet explorer depuis la version 10 et Edge */
+    user-select: none;
+    /* Propriété standard */
+}
+
+/**noir et blanc*/
+.lightWhiteText {
+    color: white;
+}
+
+.darkText {
+    color: black;
+}
+
+.blackImageToWhite {
+    filter: invert(100%);
+}
+
+.LightModeBackGroundVarianteFonce {
+    background-color: #e8e8e8;
+}
+
+.LightModeBackGroundVarianteClaire {
+    background-color: white;
+}
+
+.DarkModeBackGroundVarianteClaire {
+    background-color: #202020;
+
+}
+
+.DarkModeBackGroundVariantefonce {
+    background-color: #181818;
+
+}
+
+
+/**HEADER -- HEADER -- HEADER -- HEADER*/
+header {
+    height: 100vh;
+}
+
+/**NAVBAR -- NAVBAR*/
+#navbar {
+    /**navbar general*/
+    position: fixed;
+
+    height: 7vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    z-index: 3;
+}
+
+.navbarLightMode {
+    box-shadow: 0px -2px 15px 0px #000000;
+    -webkit-box-shadow: 0px -2px 15px 0px #000000;
+    background-color: #e8e8e8;
+}
+
+.navbarDarkMode {
+    box-shadow: 0px -2px 15px 0px #ffffff;
+    -webkit-box-shadow: 0px -2px 15px 0px #ffffff;
+    background-color: #202020;
+}
+
+h1 {
+    font-family: 'Fugaz One', cursive;
+    font-size: 33px;
+    letter-spacing: 1px;
+    margin-left: 80px;
+    margin-right: 80px;
+    transition: all .3s ease;
+}
+
+h1:hover {
+    transform: translateY(-3px);
+}
+
+#navbar #logoLink {
+    color: black;
+    text-decoration: none;
+}
+
+nav {
+    /**lien navbar & img*/
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+nav ul {
+    list-style-type: none;
+
+    display: flex;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    transition: all .3s ease;
+}
+
+.lightWhiteText li a {
+    color: white;
+}
+
+nav ul li a:hover {
+    color: #FF4522;
+}
+
+#homeNavText {
+    color: #FF4522;
+}
+
+
+#iconnav {
+    margin: 0 80px 0 20px;
+}
+
+
+#iconnav img {
+    width: 25px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.invisible {
+    /**img icone langue mode couleur*/
+    display: none;
+}
+
+
+/**HOME -- HOME*/
+#home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 100vh;
+    padding: 0 400px;
+
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+header #presentationPerso {
+    /**texte home page*/
+    height: 50vh;
+    width: 45%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header #name {
+    /**Lorris Crappier*/
+    color: #FF4522;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+header h2 {
+    /**bréve présentation*/
+    text-transform: uppercase;
+    font-size: 5.2vh;
+    font-weight: 900;
+    margin: 15px 0 30px 0;
+
+}
+
+#etiquetteMotClef {
+    /**étiquettes présentation*/
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+#etiquetteMotClef p {
+    border-radius: 30px;
+    /* width: 31%; */
+    padding: 0 25px;
+    height: 40px;
+    background-color: #FF4522;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 400;
+    margin: 0px 15px 15px 0;
+    font-size: 1.8vh;
+}
+
+.lightModeForEtiquette {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.DarkModeForEtiquette {
+    box-shadow: rgba(250, 250, 250, 0.3) 0px 1px 2px 0px, rgba(255, 255, 255, 0.15) 0px 2px 6px 2px;
+}
+
+#imageHome {
+    /**container image*/
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+
+#imageHome img {
+    width: 80%;
+    border-radius: 90%;
+    border: solid;
+    border-width: 4px;
+    border-color: #FF4522;
+}
+
+#scrollIcon {
+    position: absolute;
+    top: 88vh;
+    left: 80px;
+    transform: rotate(90deg);
+
+    animation-direction: alternate;
+    animation-delay: 0ms;
+    animation-duration: 1000ms;
+    animation-name: scroll;
+    animation-iteration-count: infinite;
+}
+
+@keyframes scroll {
+
+    /**animation scroll pour icone fleche scroll*/
+    from {
+        top: 88vh;
+    }
+
+    to {
+        top: 85vh;
+
+
+    }
+}
+
+
+
+
+/**MAIN -- MAIN -- MAIN -- MAIN*/
+main section {
+    padding: 9vh 15%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.ligneTitre {
+    /**ligne horizontal sous h2*/
+    width: 30%;
+    height: 4px;
+    background-color: #FF4522;
+}
+
+main h2 {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: 4vh;
+    font-weight: 800;
+
+    margin: 15px 0px 0px;
+}
+
+.titre {
+    margin-bottom: 50px;
+}
+
+
+/**PORTFOLIO -- PORTFOLIO*/
+/* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+transition: all .3s ease; */
+#projetRealise {
+    padding: 0;
+    margin: 0;
+
+    width: 80%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    text-align: center;
+}
+
+.projet {
+    background-color: #fd5a3b;
+    border-radius: 8px;
+    width: 300px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* background-color: rgb(179, 175, 175); */
+    background-color: #e8e8e8;
+    transition: all 0.15s ease 0s;
+    cursor: pointer;
+
+    text-decoration: none;
+}
+
+.projetLight {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.projetDark {
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+}
+
+.projet:hover {
+    transform: translateY(-3px);
+    background-color: #FF4522;
+
+}
+
+.projet:hover h3 {
+    color: white;
+}
+
+.projet div {
+    width: 100%;
+    height: 80%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-position: center;
+    height: 225px;
+}
+
+
+.projet h3 {
+    width: 80%;
+
+    padding: 6px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4em;
+
+    color: black;
+    transition: all 0.3s ease 0s;
+}
+
+#TrainTravelImage {
+    background-image: url("assets/screenshotProject/TrainTravel.png");
+    background-size: 110%;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+#portfolioImage {
+    background-image: url("assets/screenshotProject/Portfolio.png");
+    background-size: 140%;
+    background-repeat: no-repeat;
+}
+
+#BeePleasedImage {
+    background-image: url("assets/screenshotProject/beePleased.png");
+    background-size: 130%;
+    background-position: top;
+}
+
+#buttonLienPortfolio {
+    height: 45px;
+    padding: 0px 25px;
+    /* background-color: rgb(179, 175, 175); */
+    background-color: #e8e8e8;
+
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 75px 0 0 0;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.3s ease 0s;
+}
+
+.lightButtonPortfolio {
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+
+}
+
+.darkButtonPortfolio {
+    box-shadow: rgba(255, 255, 255, 0.24) 0px 3px 8px;
+
+}
+
+#portfolioSection a:hover {
+    background-color: #FF4522;
+    color: white;
+    transform: translateY(-3px);
+}
+
+
+
+
+/**COMPETENCES -- COMPETENCES*/
+#competenceBoxe {
+    padding:0;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#competenceBoxe article {
+    margin: 30px 0;
+}
+
+#competenceBoxe article .competences {
+    display: flex;
+    justify-content: center;
+}
+
+#competenceBoxe article .competences p {
+    border-radius: 30px;
+    padding: 02px 25px;
+    height: 40px;
+    background-color: #FF4522;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 400;
+    margin: 0 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.etiquetteCompetencesLigthMode article .competences p {
+    box-shadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+}
+
+.etiquetteCompetencesDarkMode article .competences p {
+    box-shadow: rgba(146, 156, 163, 0.3) 0px 1px 2px 0px, rgba(143, 153, 160, 0.15) 0px 2px 6px 2px;
+
+}
+
+.separationTitreCompetences {
+    width: 70%;
+    height: 1px;
+    background-color: white;
+}
+
+.separationCompetence {
+    margin: 0px 0 25px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.separationCompetence h4 {
+    margin: 0px 0 10px 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+
+
+
+
+/**RECOMMANDATION -- RECOMMANDATION*/
+
+#boxeRecommand {
+    /**container recommandation*/
+    position: relative;
+
+    width: 90%;
+    z-index: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.recommandationCommentaire {
+    /**recommandation*/
+    position: relative;
+
+    width: 500px;
+    height: 230px;
+
+    padding: 20px 90px;
+    border-radius: 80px 15px 80px 15px;
+
+    font-family: 'Poppins', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    justify-content: space-evenly;
+
+    transition: all .6s ease;
+}
+
+.lightModeRecommandation {
+    box-shadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+}
+
+.darkModeRecommandation {
+    box-shadow: #ffffff 0px 1px 2px 0px, #ffffff 0px 2px 6px 2px;
+}
+
+
+.topRecommandation {
+    /**img, nom, entreprise*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.topRecommandation img {
+    width: 18%;
+    border-radius: 50%;
+    margin-right: 25px;
+}
+
+.nameRecommand {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.entrepriseRecommand {
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+
+.paragrapheRecommand {
+    /**paragraphe recommandation + quotation*/
+    display: flex;
+    flex-direction: column;
+}
+
+.paragrapheRecommand img {
+    /**quotation*/
+    width: 35px;
+
+    margin-top: -35px;
+    margin-bottom: 15px;
+
+    align-self: flex-end;
+}
+
+
+/**positionnement, background, index*/
+#firstRecommandation {
+    /**Recommandation n°1*/
+    right: -200px;
+
+    z-index: 2;
+
+    background: rgb(255, 69, 34);
+    background: linear-gradient(90deg, rgba(255, 69, 34, 1) 0%, rgba(255, 180, 75, 1) 100%);
+}
+
+#secondRecommandation {
+    /**Recommandation n°2*/
+    right: 200px;
+    bottom: -20px;
+
+    z-index: 1;
+
+    background: rgb(255, 180, 75);
+    background: linear-gradient(90deg, rgba(255, 180, 75, 1) 0%, rgba(255, 69, 34, 1) 100%);
+}
+
+
+/**BOUTON LEFT & RIGHT*/
+#leftRight {
+    /**container*/
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+
+    width: 15%;
+    margin: 15px 0 0 0;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+#leftRight i {
+    /**button*/
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    border: solid;
+    border-width: 2px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+/**right & left button hover*/
+#leftRecommand:hover {
+    transform: translateX(-4px);
+}
+
+#rightRecommand:hover {
+    transform: translateX(4px);
+}
+
+
+
+
+
+/**INFORMATION SUPPPLEMENTAIRE -- INFORMATION SUPPPLEMENTAIRE*/
+
+#principalInformation,
+#principalInformation section {
+    /**reset padding*/
+    padding: 0;
+    margin: 0;
+}
+
+#infosup {
+    /**titre (diminution font)*/
+    font-size: 2.7vh;
+}
+
+
+#principalInformation {
+    /**container info*/
+    width: 60%;
+    margin: 40px 0;
+
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#infos,
+#buttonSocialCV {
+    /**right & left parts of info sup*/
+    width: 45%;
+}
+
+
+#principalInformation #infos {
+    /**info sup left*/
+    display: flex;
+    flex-direction: column;
+}
+
+#principalInformation #infos a i,
+#principalInformation #infos article i {
+    /**icone info sup left*/
+    margin-right: 20px;
+}
+
+#principalInformation #infos a,
+#principalInformation #infos article {
+    /**line info sup text*/
+    display: flex;
+    align-items: center;
+
+    color: black;
+    text-decoration: none;
+
+    margin: 20px 20px;
+}
+
+
+#buttonSocialCV {
+    /**right section of info sup*/
+    display: flex;
+    justify-content: space-evenly;
+
+    height: 180px;
+}
+
+/**Social network (linkedin & github)*/
+#principalInformation #socialNetworks {
+    /**social network*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#principalInformation #socialNetworks a {
+    color: black;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: all 0.3s ease-out, transform 600ms;
+}
+
+#principalInformation #socialNetworks a:hover {
+    transform: rotate(360deg);
+}
+
+#curriculumVitae {
+    background-color: #FF4522;
+    color: white;
+
+    height: 39px;
+    border-radius: 20px;
+    padding: 0 60px;
+
+    font-weight: 400;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all .3s ease;
+}
+
+.curriculumVitaeLightMode {
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
+
+.curriculumVitaeDarkMode {
+    box-shadow: rgba(255, 255, 255, 0.24) 0px 3px 8px;
+}
+
+#curriculumVitae:hover {
+    background-color: #fd5a3b;
+    transform: translateY(-3px);
+}
+
+
+#barreVertical {
+    width: 2px;
+    height: 170px;
+    background-color: #FF4522;
+}
+
+
+
+
+
+#iconNavBar {
+    margin: 0 20px;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    right: 20px;
+    z-index: 1;
+}
+
+#iconNavBar:hover>div {
+    background-color: #FF4522;
+}
+
+#iconNavBar div {
+    height: 2px;
+    width: 20px;
+    background-color: #202020;
+    margin: 4px 0;
+}
+
+#iconNavBar #bottomBarreIconNav {
+    transition: all .3s ease;
+
+
+}
+
+#iconNavBar #topBarreIconNav {
+    transition: all .3s ease;
+
+
+}
+
+
+
+
+/**FOOTER -- FOOTER -- FOOTER -- FOOTER*/
+
+footer {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9em;
+
+    height: 65px;
+    padding: 0 280px;
+
+    background-color: black;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer div {
+    display: flex;
+}
+
+footer div p {
+    margin: 0 5px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+@media screen and (max-width: 1800px) {
+    #home {
+        padding: 0 350px;
+    }
+
+    #portfolioSection,
+    #competencesSection,
+    #infoSupSection {
+        padding: 9vh 13%;
+    }
+
+    #projetRealise {
+        justify-content: space-between;
+    }
+
+    footer {
+        padding: 0 260px;
+    }
+}
+
+@media screen and (max-width: 1700px) {
+    #home {
+        padding: 0 300px;
+    }
+
+    #portfolioSection,
+    #competencesSection,
+    #infoSupSection {
+        padding: 9vh 11%;
+    }
+
+    footer {
+        padding: 0 240px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    #home {
+        padding: 0 250px;
+    }
+
+    #portfolioSection,
+    #competencesSection,
+    #infoSupSection {
+        padding: 9vh 9%;
+    }
+
+    footer {
+        padding: 0 220px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    h1 {
+        margin: 0px 65px;
+        font-size: 30px;
+    }
+
+    #iconnav {
+        margin: 0 65px 0 20px;
+    }
+
+    #home {
+        padding: 0 200px;
+    }
+
+    #portfolioSection,
+    #competencesSection,
+    #infoSupSection {
+        padding: 9vh 7%;
+    }
+
+    footer {
+        padding: 0 200px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    h1 {
+        margin: 0px 50px;
+        font-size: 25px;
+    }
+
+    #iconnav {
+        margin: 0 50px 0 20px;
+    }
+
+    #home {
+        padding: 0 150px;
+    }
+
+    #portfolioSection,
+    #competencesSection,
+    #infoSupSection {
+        padding: 9vh 5%;
+    }
+
+    #projetRealise {
+        width: 85%;
+    }
+
+    footer {
+        padding: 0 180px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    h1 {
+        margin: 0px 35px;
+        font-size: 22px;
+        letter-spacing: 0px;
+    }
+
+    #iconnav {
+        margin: 0 35px 0 20px;
+    }
+
+    #home {
+        padding: 0 100px;
+    }
+
+    #portfolioSection,
+    #competencesSection,
+    #infoSupSection {
+        padding: 9vh 3%;
+    }
+
+    #projetRealise {
+        width: 90%;
+    }
+
+    footer {
+        padding: 0 160px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .projet {
+        margin: 15px;
+    }
+
+    #portfolioSection {
+        padding: 9vh 0%;
+    }
+
+    #projetRealise {
+        justify-content: center;
+    }
+
+    #iconnav {
+        margin: 0 30px 0 20px;
+    }
+
+    h1 {
+        margin: 0px 20px;
+    }
+
+    footer {
+        padding: 0 140px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .projet {
+        margin: 15px;
+    }
+
+    #portfolioSection {
+        padding: 9vh 0%;
+    }
+
+    #projetRealise {
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 95%;
+        margin: 0 25px;
+    }
+
+    header #presentationPerso {
+        width: 48%;
+    }
+
+    .competences {
+        flex-wrap: wrap;
+    }
+
+    #competenceBoxe article .competences p {
+        margin: 5px 10px;
+    }
+
+    footer {
+        padding: 0 120px;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        flex-direction: column;
+        width: 0px;
+        min-width: 0px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        background-color: #e8e8e8;
+        height: 100vh;
+        padding: 30px 0px;
+        /* display: none; */
+        box-shadow: 0px -2px 15px 0px #000000;
+        -webkit-box-shadow: 0px -2px 15px 0px #000000;
+        transition: all 0.5s ease 0s;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin: 20px 0;
+    }
+
+    nav ul li {
+        margin: 15px 10px;
+
+    }
+
+    #iconNavBar {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+
+    .projet TrainTravelImage {
+        background-size: cover;
+    }
+
+    #home {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 30px;
+    }
+
+    #imageHome {
+        width: 40%;
+    }
+
+    #etiquetteMotClef {
+        justify-content: center;
+    }
+
+    header #presentationPerso {
+        width: 85%;
+        height: auto;
+        margin: 60px 0;
+    }
+
+    #competenceBoxe {
+        padding: 0;
+        width: 75%;
+    }
+
+    #principalInformation {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    #principalInformation #infos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    #principalInformation #infos a,
+    #principalInformation #infos article {
+        width: 200px;
+    }
+
+    #barreVertical {
+        transform: rotate(90deg);
+        height: 350px;
+        margin: -120px 50px;
+    }
+
+    #buttonSocialCV {
+        height: 110px;
+        justify-content: space-between;
+    }
+
+    footer {
+        padding: 0 100px;
+    }
+
+    #scrollIcon {
+        left: 2vh;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+
+    #competenceBoxe {
+        width: 80%;
+    }
+
+    footer {
+        padding: 0 40px;
+    }
+
+    #imageHome {
+        width: 45%;
+    }
+
+    #home {
+        padding: 0 20px;
+    }
+
+    #barreVertical {
+        height: 330px;
+        margin: -105px 50px;
+
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+
+    header h2 {
+        font-size: 4.8vh;
+    }
+
+    #home {
+        padding: 0 10px;
+    }
+
+    #imageHome {
+        width: 50%;
+    }
+
+    #barreVertical {
+        height: 310px;
+        margin: -90px 50px;
+
+    }
+
+    footer {
+        padding: 0px 20px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+
+    header h2 {
+        font-size: 4.3vh;
+    }
+
+    #home {
+        padding: 0 5px;
+    }
+
+    #imageHome {
+        width: 55%;
+    }
+
+    #barreVertical {
+        height: 290px;
+        margin: -75px 50px;
+
+    }
+
+    footer {
+        padding: 20px;
+        height: auto;
+        flex-direction: column;
+    }
+
+    footer div {
+        margin: 25px 0;
+
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+
+    header h2 {
+        font-size: 4.3vh;
+    }
+
+    #home {
+        padding: 0 5px;
+    }
+
+    #imageHome {
+        width: 60%;
+    }
+
+    #barreVertical {
+        height: 270px;
+        margin: -50px 50px;
+
+    }
+
+    footer{
+        padding: 35px 0;
+        
+    }
+    footer div {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin: 0px 0 50px 0
+    }
+    footer div div{
+        margin: 10px 0;
+        width: 25%;
+        height: 2px;
+        background-color: white;
+    }
+
+    .separateurFooterVertical {
+        display: none;
+    }
+    #infos, #buttonSocialCV {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main h2 {
+        text-align: center;
+    }
+
+    .ligneTitre {
+        margin: 0 auto;
+    }
+
+    #barreVertical {
+        height: 250px;
+    }
+}
+@media screen and (max-width: 500px) {
+    #curriculumVitae{
+
+        padding: 0 50px;
+    }
+
+}
+@media screen and (max-width: 400px) {
+    #curriculumVitae{
+
+        padding: 0 40px;
+    }
+
+}
+@media screen and (max-width: 300px) {
+    #curriculumVitae{
+
+        padding: 0 30px;
+    }
+
+}
+@media screen and (max-width: 200px) {
+    #curriculumVitae{
+
+        padding: 0 20px;
+    }
+
+}

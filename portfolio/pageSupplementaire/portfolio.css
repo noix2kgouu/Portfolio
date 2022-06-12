@@ -1,0 +1,90 @@
+.sectionTxtImg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.sectionTxtImg article {
+    width: 28%;
+}
+
+.sectionTxtImg div {
+    width: 68%;
+}
+
+
+.sectionTxtImg div img {
+    max-width: 100%;
+}
+
+.visuelProjet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.visuelProjet p{
+    text-align: center;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    text-align: justify;
+    margin: 15px 0;
+}
+
+#etiquetteProjet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+#presentationProjetSecond h2 {
+    font-size: 25px;
+}
+
+#etiquetteProjet p {
+    background-color: #FF4522;
+    padding: 5px 20px;
+    border-radius: 20px;
+    margin: 5px;
+    font-size: 1em;
+    color: white;
+}
+
+#galerieImage {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 100px 5em;
+    justify-content: space-between;
+}
+
+#galerieImage div {
+    max-width: 48%;
+    margin: 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#galerieImage img {
+    max-width: 100%;
+}
+
+.lightModeImg img {
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+}
+.darkModeImg img {
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+}
+
+footer p{
+    font-size: 0.9em;
+}
+
+.elargir{
+    height: 30em;
+}
