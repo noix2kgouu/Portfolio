@@ -8,7 +8,7 @@
     width: 28%;
 }
 
-.sectionTxtImg div {
+.sectionTxtImg .visuelProjet {
     width: 68%;
 }
 
@@ -38,6 +38,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    margin: 0 0 50px 0;
 }
 
 #presentationProjetSecond h2 {
@@ -87,4 +88,17 @@ footer p{
 
 .elargir{
     height: 30em;
+}
+
+
+
+.linkProject a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    
+}
+.linkProject a i{
+    margin: 0 20px 0 0;
 }
