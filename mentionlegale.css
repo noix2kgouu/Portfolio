@@ -1,0 +1,16 @@
+#mentionlegaleHeader {
+    height: 0px;
+}
+
+main {
+    text-align: center;
+    height:93.2vh;
+}
+
+main div {
+    font-family: 'Poppins', sans-serif;
+    margin: 12px 0;
+}
+main div p{
+    margin: 8px 0;
+}
