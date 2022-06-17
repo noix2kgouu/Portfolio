@@ -13,18 +13,18 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
     <!--CSS-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="mentionlegale.css">
 
     <!--fontawesome-->
     <script src="https://kit.fontawesome.com/facfbfe3cd.js" crossorigin="anonymous"></script>
 
     <!--FAVICON-->
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
-    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#ff4522">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/site.webmanifest">
+    <link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#ff4522">
     <meta name="msapplication-TileColor" content="#ff4522">
     <meta name="theme-color" content="#ff4522">
 </head>
@@ -33,8 +33,8 @@
     <header class="LightModeBackGroundVarianteFonce" id="mentionlegaleHeader">
 
         <section id="navbar" class="navbarLightMode">
-            <a href="index.html" id="logoLink">
-                <h1>Lorris Crappier</h1>
+            <a href="../index.html" id="logoLink">
+                <h1 class="black">Lorris Crappier</h1>
             </a>
             <div id="iconNavBar">
                 <div id="topBarreIconNav"></div>
@@ -43,16 +43,16 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html" class="orangeColor" id="homeNavText">Accueil</a></li>
+                    <li><a href="../index.html" class="orangeColor" id="homeNavText">Accueil</a></li>
                 </ul>
                 <div id="iconnav" class="nonSelectionnable">
-                    <img id="modeSombre" class="visible" src="assets/icon/lunes.png"
+                    <img id="modeSombre" class="visible" src="../assets/icon/lunes.png"
                         alt="icon lune, changement de la colorimétrie du site">
-                    <img id="modeClair" class="invisible" src="assets/icon/sun.png"
+                    <img id="modeClair" class="invisible black" src="../assets/icon/sun.png"
                         alt="icon soleil, changement de la colorimétrie du site">
-                    <img id="langueFrancaise" class="invisible" src="assets/icon/france.png"
+                    <img id="langueFrancaise" class="invisible" src="../assets/icon/france.png"
                         alt="icon drapeau français, changement language du site">
-                    <img id="langueAnglaise" class="visible" src="assets/icon/royaume-uni.png"
+                    <img id="langueAnglaise" class="visible" src="../assets/icon/royaume-uni.png"
                         alt="icon drapeau royaume-uni, changement language du site">
                 </div>
             </nav>
@@ -66,13 +66,13 @@
         <section id="mentionlegale">
             <h2>Mentions légales</h2>
             <div>
-                <p>Ce site web a été créé et est édité par Lorris Crappier</p>
-                <p>Courriel : l.crappier@gmail.com</p>
+                <p id="devEditeur">Ce site web a été créé et est édité par Lorris Crappier</p>
+                <p id="courrielLegalMentions">Courriel : l.crappier@gmail.com</p>
             </div>
             <div>
-                <p>Ce site web est hébergé par GitHub</p>
+                <p id="hebergeur">Ce site web est hébergé par GitHub</p>
                 <p>88 Colin P Kelly Jr St, San Francisco</p>
-                <p>CA 94107, États-Unis</p>
+                <p id="villeAdresse">CA 94107, États-Unis</p>
             </div>
         </section>
     </main>
@@ -91,14 +91,14 @@
         <a href="mentionsLegales.html" id="mentionsLegales">Mentions légales</a>
     </footer>
 
-    <script src="colorLanguageIcons.js"></script>
+    <script src="../colorLanguageIcons.js"></script>
 
-    <script src="color/darkMode.js"></script>
-    <script src="color/lightMode.js"></script>
+    <script src="darkModeLegalMentions.js"></script>
+    <script src="lightModeLegalMentions.js"></script>
 
-    <script src="recommandations/recoAnim.js"></script>
+    <script src="../navbarResponsive.js"></script>
 
-    <script src="navbarResponsive.js"></script>
+    <script src="languageFunctions.js"></script>
 </body>
 
 </html>

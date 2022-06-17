@@ -35,4 +35,9 @@ function lightMode() {
         lightModeImg[i].classList.remove("darkModeImg");
         lightModeImg[i].classList.add("lightModeImg");
     }
+
+    let linkProject = document.querySelectorAll(".linkProject a");
+    for (i = 0; i < linkProject.length; i++) {
+        linkProject[i].style.color="black"
+    }
 }

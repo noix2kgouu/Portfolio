@@ -34,4 +34,10 @@ function frenchLanguage() {
 
     let mentionsLegales = document.querySelector("#mentionsLegales");
     mentionsLegales.textContent = "Mentions légales";
+
+    let webSiteLink = document.querySelector("#webSiteLink");
+    webSiteLink.textContent = "Site web";
+
+    let githubLink = document.querySelector("#githubLink");
+    githubLink.textContent = "Repository Github";
 }

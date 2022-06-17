@@ -14,3 +14,10 @@ main div {
 main div p{
     margin: 8px 0;
 }
+
+.black{
+    color: black;
+}
+.white{
+    color: white;
+}

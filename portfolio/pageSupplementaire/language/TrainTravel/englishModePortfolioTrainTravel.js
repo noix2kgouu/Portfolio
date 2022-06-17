@@ -36,4 +36,11 @@ function englishLanguage() {
 
     let mentionsLegales = document.querySelector("#mentionsLegales");
     mentionsLegales.textContent = "Legal notice";
+
+
+    let webSiteLink = document.querySelector("#webSiteLink");
+    webSiteLink.textContent = "website";
+
+    let githubLink = document.querySelector("#githubLink");
+    githubLink.textContent = "Github repository";
 }
