@@ -33,7 +33,7 @@ openCloseNavIcon.addEventListener("click", () => {
         
         // navbarContenu.style.display = "block";
         navbarContenu.style.width = "100%";
-        navbarContenu.style.maxWidth = "345px";
+        navbarContenu.style.maxWidth = "375px";
         navbarContenu.style.height = "100%";
 
         navbarContenuListe.style.margin ="20px 5px 20px 40px"
