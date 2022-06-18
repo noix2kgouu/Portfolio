@@ -864,6 +864,12 @@ footer a {
     color: white;
     text-decoration: none;
 }
+#mentionsLegales{
+    transition: all .3s ease;
+}
+#mentionsLegales:hover{
+    color: #FF4522;
+}
 
 
 
