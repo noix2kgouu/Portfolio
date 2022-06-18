@@ -1,10 +1,14 @@
 let openCloseNavIcon = document.querySelector('#iconNavBar');
 
 let navbarContenu = document.querySelector('nav');
+let navbarContenuListe = document.querySelector('nav ul');
+let navbarContenuListeli = document.querySelectorAll('nav ul li');
 
 let topBarreIconNav = document.querySelector('#topBarreIconNav');
 let middleBarreIconNav = document.querySelector('#middleBarreIconNav');
 let bottomBarreIconNav = document.querySelector('#bottomBarreIconNav');
+
+let iconMode = document.querySelector('#iconnav');
 
 let home = document.querySelector('#home');
 let main = document.querySelector('main');
@@ -28,8 +32,15 @@ openCloseNavIcon.addEventListener("click", () => {
         bottomBarreIconNav.style.transform = "rotate(-45deg)";
         
         // navbarContenu.style.display = "block";
-        navbarContenu.style.width = "345px";
-        navbarContenu.style.padding = "30px";
+        navbarContenu.style.width = "100%";
+        navbarContenu.style.maxWidth = "345px";
+
+        navbarContenuListe.style.margin ="20px 5px 20px 40px"
+        for (i = 0; i < navbarContenuListeli.length; i++) {
+            navbarContenuListeli[i].style.margin ="15px 0"
+        }
+        iconMode.style.margin ="00px 5px 20px 40px"
+
 
         whereIsNavBar = 1;
     }
