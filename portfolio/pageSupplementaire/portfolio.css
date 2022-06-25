@@ -23,7 +23,8 @@
     justify-content: center;
     align-items: center;
 }
-.visuelProjet p{
+
+.visuelProjet p {
     text-align: center;
 }
 
@@ -78,28 +79,181 @@ p {
 .lightModeImg img {
     box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
 }
+
 .darkModeImg img {
     box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
 }
 
-footer p{
+footer p {
     font-size: 0.9em;
 }
 
-.elargir{
+.elargir {
     height: 30em;
 }
 
 
 
-.linkProject a{
+.linkProject a {
     display: flex;
     align-items: center;
     text-decoration: none;
     color: black;
-    
+
 }
-.linkProject a i{
+
+.linkProject a i {
     margin: 0 20px 0 0;
 }
 
+
+
+
+/**RESPONSIVE*/
+@media screen and (max-width: 1700px) {
+    main section {
+        padding: 9vh 13vw;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    main section {
+        padding: 9vh 11vw;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    main section {
+        padding: 9vh 9vw;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    main section {
+        padding: 9vh 7vw;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+
+    main section,
+    #galerieImage {
+        padding: 9vh 2vw;
+    }
+
+    .sectionTxtImg {
+        flex-direction: column;
+    }
+
+    .sectionTxtImg article,
+    .sectionTxtImg .visuelProjet {
+        width: 80%;
+    }
+
+    .visuelProjet {
+        margin-top: 45px;
+    }
+
+    .etiquettePrecisionTechno {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .linkProjectDiv,
+    .technoProject {
+        width: 40%;
+    }
+
+    #galerieImage div {
+        max-width: 80%;
+    }
+
+    #galerieImage {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .sectionTxtImg article,
+    .sectionTxtImg .visuelProjet {
+        width: 82%;
+    }
+
+    #galerieImage div {
+        max-width: 82%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+
+    .sectionTxtImg article,
+    .sectionTxtImg .visuelProjet {
+        width: 86%;
+    }
+
+    #galerieImage div {
+        max-width: 86%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .sectionTxtImg article,
+    .sectionTxtImg .visuelProjet {
+        width: 90%;
+    }
+
+    #galerieImage div {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 630px) {
+
+    .etiquettePrecisionTechno {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sectionTxtImg article{
+        width: 85%;
+    }
+    .technoProject,.linkProjectDiv {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .titre{
+        margin-bottom: 30px;
+    }
+    #etiquetteProjet{
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 425px) {
+
+    .etiquettePrecisionTechno {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sectionTxtImg article, .sectionTxtImg .visuelProjet {
+        width: 95%;
+    }
+    .technoProject,.linkProjectDiv {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .titre{
+        margin-bottom: 30px;
+    }
+    #etiquetteProjet{
+        justify-content: center;
+    }
+    #galerieImage div{
+        margin:20px 0;
+        max-width: 95%;
+    }
+}
