@@ -401,9 +401,9 @@ transition: all .3s ease; */
     background-repeat: no-repeat;
 }
 
-#portfolioImage {
-    background-image: url("assets/screenshotProject/Portfolio.png");
-    background-size: 140%;
+#mondialMeteoImage {
+    background-image: url("assets/screenshotProject/mondialMeteo.png");
+    background-size: 115%;
     background-repeat: no-repeat;
 }
 

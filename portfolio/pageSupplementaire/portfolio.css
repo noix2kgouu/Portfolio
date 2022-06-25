@@ -215,45 +215,62 @@ footer p {
         flex-direction: column;
         align-items: center;
     }
-    .sectionTxtImg article{
+
+    .sectionTxtImg article {
         width: 85%;
     }
-    .technoProject,.linkProjectDiv {
+
+    .technoProject,
+    .linkProjectDiv {
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .titre{
+
+    .titre {
         margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
     }
-    #etiquetteProjet{
+
+    #etiquetteProjet {
         justify-content: center;
     }
 }
+
 @media screen and (max-width: 425px) {
 
     .etiquettePrecisionTechno {
         flex-direction: column;
         align-items: center;
     }
-    .sectionTxtImg article, .sectionTxtImg .visuelProjet {
+
+    .sectionTxtImg article,
+    .sectionTxtImg .visuelProjet {
         width: 95%;
     }
-    .technoProject,.linkProjectDiv {
+
+    .technoProject,
+    .linkProjectDiv {
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .titre{
+
+    .titre {
         margin-bottom: 30px;
     }
-    #etiquetteProjet{
+
+    #etiquetteProjet {
         justify-content: center;
     }
-    #galerieImage div{
-        margin:20px 0;
+
+    #galerieImage div {
+        margin: 20px 0;
         max-width: 95%;
     }
 }
