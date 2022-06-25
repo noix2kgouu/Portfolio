@@ -40,4 +40,13 @@ function lightMode() {
     for (i = 0; i < linkProject.length; i++) {
         linkProject[i].style.color="black"
     }
+
+
+    let croixNavBar = document.querySelectorAll("#iconNavBar div");
+    for (i = 0; i < croixNavBar.length; i++) {
+        croixNavBar[i].style.backgroundColor="#202020";
+    }
+
+    let navbarForResponsive = document.querySelector("nav");
+    navbarForResponsive.style.backgroundColor=("#E8E8E8")
 }

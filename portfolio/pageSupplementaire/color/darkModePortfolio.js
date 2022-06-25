@@ -54,4 +54,12 @@ function darkMode() {
     for (i = 0; i < linkProject.length; i++) {
         linkProject[i].style.color="white"
     }
+
+    let croixNavBar = document.querySelectorAll("#iconNavBar div");
+    for (i = 0; i < croixNavBar.length; i++) {
+        croixNavBar[i].style.backgroundColor="white";
+    }
+
+    let navbarForResponsive = document.querySelector("nav");
+    navbarForResponsive.style.backgroundColor=("#202020")
 }
