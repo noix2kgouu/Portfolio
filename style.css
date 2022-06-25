@@ -312,6 +312,7 @@ main h2 {
 
 .titre {
     margin-bottom: 50px;
+    width: fit-content;
 }
 
 
