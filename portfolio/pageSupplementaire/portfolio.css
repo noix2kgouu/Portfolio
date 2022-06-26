@@ -5,11 +5,11 @@
 }
 
 .sectionTxtImg article {
-    width: 28%;
+    width: 35%;
 }
 
 .sectionTxtImg .visuelProjet {
-    width: 68%;
+    width: 60%;
 }
 
 
@@ -106,7 +106,9 @@ footer p {
     margin: 0 20px 0 0;
 }
 
-
+main section {
+    padding: 9vh 8%;
+}
 
 
 
