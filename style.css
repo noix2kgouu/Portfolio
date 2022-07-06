@@ -406,12 +406,13 @@ transition: all .3s ease; */
     background-image: url("assets/screenshotProject/mondialMeteo.png");
     background-size: 115%;
     background-repeat: no-repeat;
+    background-position: top left;
 }
 
-#BeePleasedImage {
-    background-image: url("assets/screenshotProject/beePleased.png");
+#searchSongImage {
+    background-image: url("assets/screenshotProject/searchSong.PNG");
     background-size: 130%;
-    background-position: top;
+    background-position: top left;
 }
 
 #buttonLienPortfolio {
